@@ -518,6 +518,32 @@ h3 {
     display: flex;
     align-items: baseline;
 }
+.footer-form {
+    margin-left: auto;
+}
+.footer-form input {
+    height: 50px;
+    background-color: #2F303A;
+}
+.footer-submit-btn {
+    display: inline-block;
+    justify-content: center;
+    background-color: #2196F3;
+    border: none;
+    color: var(--background-white-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px 55px;
+    margin: auto;
+    width: 200px;
+    border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* portfolio */
 .projects-filter {
     font-weight: 500;
@@ -652,6 +678,57 @@ h3 {
     background-image: url(../images/close-2.svg);
     background-size: contain;
     cursor: pointer;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 41px;
+    padding-right: 39px;
+}
+.form-header {
+    font-style: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: justify;
+    margin-top: 40px;
+}
+input {
+    margin-bottom: 28px;
+    border-radius: 4px;
+}
+label {
+    font-style: 400;
+    font-size: 12px;
+    line-height: 0.84;
+    color: #757575;
+}
+textarea {
+    resize: none;
+}
+.submit-btn {
+    display: inline-block;
+    justify-content: center;
+    background-color: #2196F3;
+    border: none;
+    color: var(--background-white-color);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px 55px;
+    margin: auto;
+    width: 200px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: #188CE8;
 }
 
 

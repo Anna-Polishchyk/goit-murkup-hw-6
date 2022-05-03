@@ -525,7 +525,9 @@ h3 {
     width: 358px;
     height: 50px;
     background-color: #2F303A;
-    color: rgba (255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    padding: 15px 16px;
 
 }
 .footer-submit-btn {
@@ -680,6 +682,10 @@ h3 {
     background-size: contain;
     cursor: pointer;
 }
+.close-btn:hover,
+.close-btn:focus {
+    
+}
 
 .form {
     display: flex;
@@ -688,16 +694,20 @@ h3 {
     padding-right: 39px;
 }
 .form-header {
+    display: flex;
+    justify-content: center;
     font-style: 700;
+    font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
     text-align: justify;
     margin-top: 40px;
 }
 .form input {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     border-radius: 4px;
     height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }
 input:focus-within {
     color: var(--accent-color);
@@ -707,14 +717,26 @@ label {
     font-size: 12px;
     line-height: 0.84;
     color: #757575;
+    margin-bottom: 4px;
 }
 .checkbox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.checkbox label {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 textarea {
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+}
+.policy-link {
+    color: #2196F3;
 }
 .submit-btn {
     display: inline-block;

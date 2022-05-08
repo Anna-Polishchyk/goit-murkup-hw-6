@@ -394,13 +394,13 @@
             <li class="item-thumb">
               <a href="" class="clients-link link"
                 ><svg class="clients-logo">
-                  <use href="./images/symbol-defs.svg#icon-Client-6"></use></svg
+                  <use href="./images/symbol-defs.svg#icon-Client-5"></use></svg
               ></a>
             </li>
             <li class="item-thumb">
               <a href="" class="clients-link link"
                 ><svg class="clients-logo">
-                  <use href="./images/symbol-defs.svg#icon-Logo-6"></use></svg
+                  <use href="./images/symbol-defs.svg#icon-Client-6"></use></svg
               ></a>
             </li>
           </ul>
@@ -471,8 +471,13 @@
         </div>
         <form class="footer-form">
           <h3 class="footer-text">подпишитесь на рассылку</h3>
-          <input type="email" name="mail" placeholder="E-mail">
-          <button class="footer-submit-btn" type="submit">Подписаться <svg class="paperplane" width="24px" height="24px"><use href="images/symbol-defs.svg#icon-send"></use></svg></button>
+          <input type="email" name="mail" placeholder="E-mail" />
+          <button class="footer-submit-btn" type="submit">
+            Подписаться
+            <svg class="paperplane" width="24px" height="24px">
+              <use href="images/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
@@ -481,18 +486,56 @@
         <form class="form">
           <p class="form-header">Оставьте свои данные, мы вам перезвоним</p>
           <label for="name">Имя</label>
-          <input type="text" name="name" id="name" <svg class="form-icon" width="18px" height="18px"><use href="images/symbol-defs.svg#icon-form-1"></use></svg>
+          <div class="input-box">
+            <span
+              ><svg class="form-icon" width="12px" height="12px">
+                <use href="images/symbol-defs.svg#icon-human-form"></use></svg
+            ></span>
+            <input type="text" class="form-input" name="name" id="name" />
+          </div>
           <label for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" autofocus />
+          <div class="input-box">
+            <span
+              ><svg class="form-icon" width="13px" height="13px">
+                <use href="images/symbol-defs.svg#icon-phone-form"></use></svg
+            ></span>
+            <input
+              type="tel"
+              class="form-input"
+              name="tel"
+              id="tel"
+              autofocus
+            />
+          </div>
           <label for="mail">Почта</label>
-          <input type="email" name="mail" id="mail"/>
+          <div class="input-box">
+            <span
+              ><svg class="form-icon" width="15px" height="12px">
+                <use href="images/symbol-defs.svg#icon-mail-form"></use></svg
+            ></span>
+            <input type="email" class="form-input" name="mail" id="mail" />
+          </div>
           <label for="comment">Комментарий</label>
-          <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
-          <div class="checkbox"><input type="checkbox" name="policy" id="policy"/>
-          <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a></label></div>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="5"
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="checkbox">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="policy-link">Условия договора</a></label
+            >
+          </div>
           <button class="submit-btn" type="submit">Отправить</button>
         </form>
-        <button class="close-btn" data-modal-close></button>
+        <button class="close-btn" data-modal-close>
+          <svg class="close-icon" width="11px" height="11px">
+            <use href="images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

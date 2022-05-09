@@ -526,6 +526,7 @@ h3 {
 .footer-form input {
     width: 358px;
     height: 50px;
+    color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 4px;
@@ -710,7 +711,6 @@ h3 {
     margin-bottom: 12px;
 }
 .form input {
-    margin-bottom: 16px;
     border-radius: 4px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -726,36 +726,37 @@ label {
     line-height: 0.84;
     color: #757575;
     margin-bottom: 4px;
+    margin-top: 15px;
 }
 
 .checkbox-label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
     font-style: 400;
     font-size: 14px;
     line-height: 1.71;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.checkbox {
+input .checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     position: absolute;
+    margin-right: 8px;
 }
 .checkbox-icon {
+    position: relative;
     display: inline-block;
     width: 16px;
     height: 16px;
     border: 2px solid var(--primary-text-color);
     border-radius: 4px;
-    margin-right: 8px;
 }
 .checkbox:checked + .checkbox-icon {
     border-color: var(--accent-color);
     background-color: var(--accent-color);
-    background-image: url(../images/icon\ check-2.svg);
+    background-image: url(../images/check-2.svg);
     background-size: contain;
     background-origin: border-box;
 }

@@ -522,13 +522,13 @@
             rows="5"
             placeholder="Введите текст"
           ></textarea>
-          <div class="checkbox">
-            <input type="checkbox" name="policy" id="policy" />
-            <label for="policy"
-              >Соглашаюсь с рассылкой и принимаю
+            <label class="checkbox-label"
+            <input class="checkbox" type="checkbox" name="policy" required/>
+            <span class="checkbox-icon">
+            </span>
+              Соглашаюсь с рассылкой и принимаю
               <a href="" class="policy-link">Условия договора</a></label
             >
-          </div>
           <button class="submit-btn" type="submit">Отправить</button>
         </form>
         <button class="close-btn" data-modal-close>

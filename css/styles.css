@@ -698,18 +698,16 @@ h3 {
 .form {
     display: flex;
     flex-direction: column;
-    padding-left: 41px;
-    padding-right: 39px;
+    padding: 40px 39px 40px 41px;
 }
 .form-header {
-    display: flex;
-    justify-content: center;
+    text-align: justify;
     font-style: 700;
     font-weight: bold;
     font-size: 20px;
     line-height: 1.15;
-    text-align: justify;
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 12px;
 }
 .form input {
     margin-bottom: 16px;
@@ -717,6 +715,7 @@ h3 {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
+    cursor: pointer;
 }
 input:focus-within {
     color: var(--accent-color);
@@ -728,15 +727,37 @@ label {
     color: #757575;
     margin-bottom: 4px;
 }
-.checkbox {
+
+.checkbox-label {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-}
-.checkbox label {
+    font-style: 400;
     font-size: 14px;
     line-height: 1.71;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.checkbox:checked + .checkbox-icon {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/icon\ check-2.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 
 textarea {
@@ -759,6 +780,9 @@ textarea:focus {
 }
 .input-box:hover,
 .input-box:focus {
+    fill: var(--accent-color);
+}
+.input-box:focus-within {
     fill: var(--accent-color);
 }
 .form-icon {

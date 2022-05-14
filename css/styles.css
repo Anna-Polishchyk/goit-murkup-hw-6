@@ -711,8 +711,9 @@ h3 {
     margin-top: 0;
     margin-bottom: 12px;
 }
-.form input {
+.form .input {
     border-radius: 4px;
+    width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     padding-left: 42px;
@@ -786,6 +787,7 @@ textarea:focus {
 }
 .policy-link {
     color: #2196F3;
+    margin-left: 5px;
 }
 .input-box {
     position: relative;
